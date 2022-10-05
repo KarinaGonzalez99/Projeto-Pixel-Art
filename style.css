@@ -14,7 +14,9 @@ h1 {
     background-color: yellow;}
 
 .color {
-    border: black '1px';
+    border: black;
+    border: '1px';
+    border: solid;
     border-style: solid;
     display: inline-block;
     width: 40px;
