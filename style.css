@@ -1,17 +1,9 @@
+h1 {
+    text-align: center;
+}
+
 #preto {
     background-color:black;
-}
-
-#roxo {
-    background-color:rgb(194, 146, 194);
-}
-
-#amarelo {
-    background-color:rgb(239, 239, 166);
-}
-
-#rosa {
-    background-color:rgb(252, 210, 217);
 }
 
 .color {
