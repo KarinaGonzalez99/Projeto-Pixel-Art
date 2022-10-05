@@ -4,6 +4,14 @@ h1 {
 #preto {
     background-color:black;}
 
+#color2 {
+    background-color: aquamarine;}
+
+#color3 {
+    background-color: purple;}
+#color4 {
+    background-color: yellow;}
+
 .color {
     border: black '1px';
     border-style: solid;
