@@ -1,5 +1,11 @@
 let button = document.getElementById('button-random-color');
-let coresAleatorias = document.getElementsByClassName('color');
+const coresAleatorias = document.getElementsByClassName('color');
+let preto = document.getElementsByClassName('color selected');
+let corpreta1
+coresAleatorias[0].style.backgroundColor = 'black';
+coresAleatorias[1].style.backgroundColor = 'yellow';
+coresAleatorias[2].style.backgroundColor = 'blue';
+coresAleatorias[3].style.backgroundColor = 'red';
 
 function gerador() {
     button.addEventListener('click', function () { // function dentro pois é anônima, poderia ficar dentro qnto fora, ou usar
@@ -11,6 +17,8 @@ function gerador() {
     })
 }
 gerador();
+
+
 
 document.addEventListener('click', function (choice) { 
     if (choice.target.classList.contains('pixel')) { 
@@ -24,7 +32,14 @@ document.addEventListener('click', function (choice) {
         }
         choice.target.className = `${choice.target.className} selected`;
     }
+    if (choice.target.id === 'clear-board') { 
+        let pixelsBoard = document.getElementsByClassName('pixel');
+        for(let i3 of pixelsBoard) {
+            i3.style.backgroundColor =`rgb(255,255,255)`;
+        }
+    }
 });
+
 
 
 
