@@ -1,11 +1,10 @@
 let button = document.getElementById('button-random-color');
 const coresAleatorias = document.getElementsByClassName('color');
 let preto = document.getElementsByClassName('color selected');
-let corpreta1
 coresAleatorias[0].style.backgroundColor = 'black';
-coresAleatorias[1].style.backgroundColor = 'yellow';
-coresAleatorias[2].style.backgroundColor = 'blue';
-coresAleatorias[3].style.backgroundColor = 'red';
+coresAleatorias[1].style.backgroundColor = 'pink';
+coresAleatorias[2].style.backgroundColor = 'rgb(146, 81, 146)';
+coresAleatorias[3].style.backgroundColor = ' rgb(255, 255, 170)';
 
 function gerador() {
     button.addEventListener('click', function () { // function dentro pois é anônima, poderia ficar dentro qnto fora, ou usar
@@ -39,8 +38,6 @@ document.addEventListener('click', function (choice) {
         }
     }
 });
-
-
 
 
 

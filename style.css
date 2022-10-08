@@ -1,5 +1,13 @@
+body{
+    background-image: url(back.gif);
+    background-size: cover;}
+
 h1 {
-    text-align: center;}
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;}
 
 #preto {
     background-color:black;}
@@ -8,10 +16,10 @@ h1 {
     background-color: pink;}
 
 #purple {
-    background-color: purple;}
+    background-color: rgb(146, 81, 146);}
 
 #yellow {
-    background-color: yellow;}
+    background-color: rgb(255, 255, 170);}
 
 .color {
     border: black 1px solid;
@@ -31,8 +39,20 @@ h1 {
     margin-top: 30px;
     text-align: center;}
 
-#button-random-color {
-    margin-left: 47%;}
+#button-random-color { 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px}
+
+#clear-board {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;}
 
 #color-palette {
-    margin-left: 45.5%;}
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 45%;
+    border-radius: 25px;}
