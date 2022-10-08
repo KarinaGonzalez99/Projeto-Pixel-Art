@@ -12,4 +12,20 @@ function gerador() {
 }
 gerador();
 
+document.addEventListener('click', function (choice) { 
+    if (choice.target.classList.contains('pixel')) { 
+        let preto = document.getElementsByClassName('color selected')[0].style.backgroundColor;
+        choice.target.style.backgroundColor = preto;
+    }
+
+    if (choice.target.classList.contains('color')) {
+        for (let index1 of coresAleatorias) {
+            index1.className = 'color';
+        }
+        choice.target.className = `${choice.target.className} selected`;
+    }
+});
+
+
+
 
